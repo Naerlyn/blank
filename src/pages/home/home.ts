@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { Abilities1Page } from '../abilities1/abilities1';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +8,18 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+
+  tab1Root = Abilities1Page;
+  
   constructor(public navCtrl: NavController) {
 
   }
+
+  
+    myClickEvent() {
+  
+      this.navCtrl.push(this.tab1Root);
+      console.log("button clicked");
+    }
 
 }
