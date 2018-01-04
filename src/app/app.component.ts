@@ -20,3 +20,11 @@ export class MyApp {
     });
   }
 }
+
+firebase.initializeApp({
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  storageBucket: "",
+  messagingSenderId: ""
+});
